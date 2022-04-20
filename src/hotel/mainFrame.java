@@ -31,7 +31,7 @@ public class mainFrame extends JFrame {
         btnEntrar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(tfUsuario.getText().equals("Pepe") && tfContraseña.getText().equals("abc")){
+                if(tfUsuario.getText().equals("Pepe") && tfContraseña.getText().equals("abcd")){
                     secondFrame second = new secondFrame();
                     dispose();
                 }else{
