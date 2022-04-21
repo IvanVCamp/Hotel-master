@@ -1,4 +1,5 @@
 package cliente;
+import PaqC07.Cliente;
 import PaqC07.Registro;
 
 import javax.management.MBeanRegistration;
@@ -111,5 +112,6 @@ public class Prueba {
         System.out.println(r1.muestraPantalla());
         Serializar(r1);
     }
+
 }
 

@@ -76,5 +76,18 @@ import java.util.Arrays;
                             return new int[]{i, j};
             return new int[] {-1,-1};
         }
-
+        public Cliente coincidenciaDNI(int dni){
+            boolean flag=false;
+            Cliente salida = null;
+            for(int i=0; i<numPisos; i++){
+                for(int j=0; j<numHab; j++){
+                    if(dni == habitaciones[i][j].getDni()){
+                        salida=habitaciones[i][j];
+                        flag=true;
+                    }
+                }
+                if (flag) break;
+            }
+            return salida;
+        }
     }
