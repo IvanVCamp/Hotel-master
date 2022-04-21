@@ -19,7 +19,7 @@ public class thirdFrame extends JFrame{
     private JLabel lbTipo;
     private JTextField tfTipo;
     private JButton btMostrar;
-    protected Registro H;
+    protected Registro H; //Registro contiene todos los datos de las habitaciones reservadas o libres.
 
     thirdFrame(){
         H = secondFrame.H;
@@ -158,6 +158,8 @@ public class thirdFrame extends JFrame{
         }
         taMapaHotel.setText(mostrar);
     }
+
+
 
     public void mostrarMapa2(int dni){
         String mostrar = new String();
