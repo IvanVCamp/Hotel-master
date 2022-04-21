@@ -158,7 +158,20 @@ public class thirdFrame extends JFrame{
         }
         taMapaHotel.setText(mostrar);
     }
-
+    public Cliente coincidenciaDNI(int dni){
+        boolean flag=false;
+        Cliente salida = null;
+        for(int i=0; i<H.numPisos; i++){
+            for(int j=0; j<H.numHab; j++){
+                if(dni == H.habitaciones[i][j].getDni()){
+                    salida=H.habitaciones[i][j];
+                    flag=true;
+                }
+            }
+            if (flag) break;
+        }
+        return salida;
+    }
 
 
     public void mostrarMapa2(int dni){
