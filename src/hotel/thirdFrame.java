@@ -24,7 +24,7 @@ public class thirdFrame extends JFrame{
     thirdFrame(){
         H = secondFrame.H;
         setContentPane(thirdPanel);
-        setTitle("Getsión de reservas");
+        setTitle("Gestión de reservas");
         setSize(650,300);
         this.mostrarMapa();
         setVisible(true);
